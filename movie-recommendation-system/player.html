@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineRule | Now Playing</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍿</text></svg>">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    
+    .player-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+    }
+
+    #moviePlayer {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* OTT Top UI Overlay */
+    .player-overlay-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, transparent 100%);
+      z-index: 10;
+      transition: opacity 0.3s ease;
+    }
+
+    .back-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+      margin-right: 1.5rem;
+      transition: transform 0.2s;
+    }
+
+    .back-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .now-playing-title {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .hide-overlay .player-overlay-top {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="player-container" id="playerContainer">
+    <!-- Overlay UI -->
+    <div class="player-overlay-top" id="playerOverlay">
+      <button class="back-btn" id="backBtn" onclick="goBack()" title="Back to Browse">❮</button>
+      <h1 class="now-playing-title" id="playingTitle">Loading Movie...</h1>
+    </div>
+
+    <!-- Native HTML5 Video Player playing Tears of Steel High-Quality Demo -->
+    <video id="moviePlayer" controls autoplay>
+      <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <script src="js/security.js?v=30"></script>
+  <script src="js/data.js?v=30"></script>
+  <script src="js/auth.js?v=30"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const movieId = parseInt(urlParams.get('id'));
+    const titleEl = document.getElementById('playingTitle');
+    const playerContainer = document.getElementById('playerContainer');
+    const video = document.getElementById('moviePlayer');
+    let activityTimeout;
+
+    // Set correct title based on ID
+    if(movieId) {
+      const allMovies = getAllMovies();
+      const movie = allMovies.find(m => m.id === movieId);
+      if(movie) {
+        titleEl.textContent = movie.title;
+        // Log viewing activity for Context Engine
+        addToHistory(movieId);
+      } else {
+        titleEl.textContent = "CineRule Original";
+      }
+    } else {
+      titleEl.textContent = "CineRule Default Feature";
+    }
+
+    function goBack() {
+      // Default fallback or history back
+      if(window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = 'catalog.html';
+      }
+    }
+
+    // Auto-hide overlay after 3 seconds of inactivity
+    function resetActivityTimer() {
+      playerContainer.classList.remove('hide-overlay');
+      clearTimeout(activityTimeout);
+      activityTimeout = setTimeout(() => {
+        if (!video.paused) {
+          playerContainer.classList.add('hide-overlay');
+        }
+      }, 3000);
+    }
+
+    document.addEventListener('mousemove', resetActivityTimer);
+    document.addEventListener('click', resetActivityTimer);
+    video.addEventListener('play', resetActivityTimer);
+    video.addEventListener('pause', () => {
+      playerContainer.classList.remove('hide-overlay');
+      clearTimeout(activityTimeout);
+    });
+
+    resetActivityTimer();
+  </script>
+</body>
+</html>

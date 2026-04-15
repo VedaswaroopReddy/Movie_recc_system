@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Context-Aware Rule-Based Movie Recommendation System — Login">
+  <title>CineRule | Login</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍿</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="auth-logo">🍿</div>
+      <h1 id="formTitle">Welcome Back</h1>
+      <p class="subtitle" id="formSubtitle">Sign in to continue to your movie dashboard</p>
+
+      <div id="authMessage" class="auth-msg"></div>
+
+      <!-- LOGIN FORM -->
+      <div id="loginSection">
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginUser">Username</label>
+            <input type="text" id="loginUser" placeholder="Enter your username" autocomplete="username">
+          </div>
+          <div class="form-group">
+            <label for="loginPass">Password</label>
+            <input type="password" id="loginPass" placeholder="Enter your password" autocomplete="current-password">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+      </div>
+
+      <!-- REGISTER FORM -->
+      <div id="registerSection" class="hidden">
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="regUser">Username</label>
+            <input type="text" id="regUser" placeholder="Choose a username" autocomplete="username">
+          </div>
+          <div class="form-group">
+            <label for="regPass">Password</label>
+            <input type="password" id="regPass" placeholder="Create a password" autocomplete="new-password">
+          </div>
+          <div class="form-group">
+            <label for="regConfirm">Confirm Password</label>
+            <input type="password" id="regConfirm" placeholder="Confirm your password" autocomplete="new-password">
+          </div>
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </div>
+
+      <button class="toggle-btn" id="toggleFormBtn">Don't have an account? Register</button>
+    </div>
+  </div>
+
+  <script src="js/security.js?v=30"></script>
+  <script src="js/auth.js?v=30"></script>
+</body>
+</html>

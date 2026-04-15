@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Admin Panel — Context-Aware Rule-Based Movie Recommendation System">
+  <title>CineRule | Admin Panel</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍿</text></svg>">
+  <link rel="stylesheet" href="css/style.css?v=30">
+  <link rel="stylesheet" href="css/netflix.css?v=30">
+</head>
+<body class="netflix-mode">
+
+  <!-- NAVBAR (Same structure as catalog.html) -->
+  <nav class="navbar navbar-netflix" id="mainNav">
+    <a href="catalog.html" class="nav-brand">🍿 <span>CineRule</span></a>
+    <div class="nav-links">
+      <a href="catalog.html">🏠 Home</a>
+      <a href="admin.html" class="active">⚙️ Admin</a>
+    </div>
+
+    <!-- MODERN SEARCH BAR (Synced from Catalog) -->
+    <div class="modern-search-container" style="flex: 0 1 350px; margin: 0 2rem;">
+      <span class="search-icon">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </span>
+      <input type="text" id="catalogSearchInput" class="modern-search-input" placeholder="Search title, year, genre, language...">
+    </div>
+
+    <div class="nav-user">
+      <span class="user-badge">👤 <span id="userName"></span></span>
+      <button class="btn-logout" onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <div class="page-container">
+    <div class="page-header">
+      <h1>⚙️ Admin Panel</h1>
+      <p>Add new movies and create custom recommendation rules.</p>
+    </div>
+
+    <div id="adminMessage" class="admin-msg"></div>
+
+    <div class="admin-grid">
+      <!-- ADD MOVIE -->
+      <div class="admin-section">
+        <h2 id="addMovieTitle">🎬 Add New Movie</h2>
+        <form id="addMovieForm">
+          <input type="hidden" id="editMovieId" value="">
+          <div class="form-group">
+            <label for="movieTitle">Movie Title</label>
+            <input type="text" id="movieTitle" placeholder="e.g. Salaar" required>
+          </div>
+          <div class="form-group">
+            <label>Genres (select one or more)</label>
+            <div class="genre-checkboxes">
+              <label class="checkbox-label"><input type="checkbox" name="movieGenre" value="Action"> Action</label>
+              <label class="checkbox-label"><input type="checkbox" name="movieGenre" value="Comedy"> Comedy</label>
+              <label class="checkbox-label"><input type="checkbox" name="movieGenre" value="Romance"> Romance</label>
+              <label class="checkbox-label"><input type="checkbox" name="movieGenre" value="Drama"> Drama</label>
+              <label class="checkbox-label"><input type="checkbox" name="movieGenre" value="Thriller"> Thriller</label>
+              <label class="checkbox-label"><input type="checkbox" name="movieGenre" value="Sci-Fi"> Sci-Fi</label>
+              <label class="checkbox-label"><input type="checkbox" name="movieGenre" value="Horror"> Horror</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="movieLang">Language</label>
+              <input type="text" id="movieLang" placeholder="e.g. Telugu" required>
+            </div>
+            <div class="form-group">
+              <label for="movieRating">Rating (1–5)</label>
+              <div class="custom-number-wrapper">
+                <button type="button" class="spinner-btn minus" onclick="this.parentNode.querySelector('input').stepDown()">-</button>
+                <input type="number" id="movieRating" min="1" max="10" step="0.1" value="5" required>
+                <button type="button" class="spinner-btn plus" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="movieYear">Year</label>
+              <div class="custom-number-wrapper">
+                <button type="button" class="spinner-btn minus" onclick="this.parentNode.querySelector('input').stepDown()">-</button>
+                <input type="number" id="movieYear" min="1900" max="2030" value="2024" required>
+                <button type="button" class="spinner-btn plus" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="moviePoster">Poster URL (optional)</label>
+              <input type="text" id="moviePoster" placeholder="https://...image.jpg or posters/image.png">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-submit">➕ Add Movie</button>
+        </form>
+      </div>
+
+      <!-- ADD RULE -->
+      <div class="admin-section">
+        <h2>📏 Add Custom Rule</h2>
+        <form id="addRuleForm">
+          <div class="form-group">
+            <label for="ruleName">Rule Name</label>
+            <input type="text" id="ruleName" placeholder="e.g. Action + Morning" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ruleGenre">IF Recent Genre =</label>
+              <select id="ruleGenre">
+                <option value="Any">Any</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Romance">Romance</option>
+                <option value="Drama">Drama</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Horror">Horror</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ruleTime">AND Time =</label>
+              <select id="ruleTime">
+                <option value="Any">Any</option>
+                <option value="Morning">Morning</option>
+                <option value="Evening">Evening</option>
+                <option value="Night">Night</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ruleTargetGenres">THEN Recommend Genres (comma separated)</label>
+            <input type="text" id="ruleTargetGenres" placeholder="e.g. Action, Thriller" required>
+          </div>
+          <div class="form-group">
+            <label for="ruleReason">Reason / Explanation</label>
+            <input type="text" id="ruleReason" placeholder="e.g. Morning action fans love thrillers!" required>
+          </div>
+          <button type="submit" class="btn btn-submit">➕ Add Rule</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- EXISTING RULES -->
+    <div class="full-width-section">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+        <h2>📏 All Rules</h2>
+        <button id="openRulesBtn" class="btn btn-submit" type="button">📂 View Rules Dictionary</button>
+      </div>
+
+      <dialog id="rulesModal" class="rules-modal">
+        <div class="modal-header">
+          <h2>🧠 Rule Dictionary (Checked in order)</h2>
+          <button id="closeRulesBtn" class="btn btn-remove-sm" type="button">❌ Close</button>
+        </div>
+        <div class="modal-body">
+          <div id="rulesList"></div>
+        </div>
+      </dialog>
+    </div>
+
+    <!-- ALL MOVIES TABLE -->
+    <div class="full-width-section">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+        <h2 style="margin: 0;">🎬 All Movies</h2>
+        <div class="admin-controls" style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+          <div class="modern-search-container">
+            <span class="search-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input type="text" id="adminSearchInput" class="modern-search-input" placeholder="Search title, year, genre, language...">
+          </div>
+          <div class="sort-controls" style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-weight: 600; color: #cbd5e1; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">Sort by:</span>
+            <div class="modern-dropdown" id="adminSortDropdown">
+              <button class="dropdown-trigger" id="sortDropdownTrigger" type="button">
+              <span class="trigger-label">Default ID</span>
+              <svg class="trigger-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="sortDropdownMenu">
+              <div class="dropdown-item active" data-value="default">
+                <span class="item-icon">🆔</span>
+                <span>Default ID</span>
+              </div>
+              <div class="dropdown-item" data-value="name_asc">
+                <span class="item-icon">🔠</span>
+                <span>Name (A-Z)</span>
+              </div>
+              <div class="dropdown-item" data-value="name_desc">
+                <span class="item-icon">🔡</span>
+                <span>Name (Z-A)</span>
+              </div>
+              <div class="dropdown-item" data-value="date_desc">
+                <span class="item-icon">🆕</span>
+                <span>Year (Newest)</span>
+              </div>
+              <div class="dropdown-item" data-value="date_asc">
+                <span class="item-icon">⏳</span>
+                <span>Year (Oldest)</span>
+              </div>
+              <div class="dropdown-item" data-value="rating_desc">
+                <span class="item-icon">⭐</span>
+                <span>Rating (High-Low)</span>
+              </div>
+              <div class="dropdown-item" data-value="rating_asc">
+                <span class="item-icon">📉</span>
+                <span>Rating (Low-High)</span>
+              </div>
+              <div class="dropdown-item" data-value="language">
+                <span class="item-icon">🌐</span>
+                <span>Language</span>
+              </div>
+              <div class="dropdown-item" data-value="genre">
+                <span class="item-icon">🎭</span>
+                <span>Genre (Primary)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="overflow-x: auto;">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Genre(s)</th>
+              <th>Language</th>
+              <th>Rating</th>
+              <th>Year</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="movieTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/security.js?v=30"></script>
+  <script src="js/data.js?v=30"></script>
+  <script src="js/auth.js?v=30"></script>
+  <script src="js/admin.js?v=30"></script>
+</body>
+</html>
