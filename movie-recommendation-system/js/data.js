@@ -115,7 +115,7 @@ const DEFAULT_MOVIES = [
     language: "Kannada",
     rating: 8.3,
     year: 2022,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/d/d0/K.G.F_Chapter_2.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/d/d0/K.G.F_Chapter_2.jpg"
   },
   {
     id: 13,
@@ -124,7 +124,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.3,
     year: 2016,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/3/32/Premam_film_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/3/32/Premam_film_poster.jpg"
   },
   {
     id: 14,
@@ -133,7 +133,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 6.3,
     year: 2022,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/bb/Bheemla_Nayak.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/bb/Bheemla_Nayak.jpg"
   },
   {
     id: 15,
@@ -169,7 +169,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 7.6,
     year: 2022,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/c/c3/Ponniyin_Selvan_I.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/c/c3/Ponniyin_Selvan_I.jpg"
   },
   {
     id: 19,
@@ -205,7 +205,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.7,
     year: 2020,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/6/61/Soorarai_Pottru.JPG"
+    poster: "https://upload.wikimedia.org/wikipedia/en/6/61/Soorarai_Pottru.JPG"
   },
   {
     id: 23,
@@ -214,7 +214,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.5,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/b3/Kumbalangi_Nights.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/b3/Kumbalangi_Nights.jpg"
   },
   {
     id: 24,
@@ -223,7 +223,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.3,
     year: 2013,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/8/8a/Drishyam_2013_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/8/8a/Drishyam_2013_poster.jpg"
   },
   {
     id: 25,
@@ -232,7 +232,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 7.8,
     year: 2021,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/bf/Minnal_Murali.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/bf/Minnal_Murali.jpg"
   },
   {
     id: 26,
@@ -349,7 +349,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 7.9,
     year: 2007,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/7/78/Happy_Days_%282007_film%29.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/7/78/Happy_Days_%282007_film%29.jpg"
   },
   {
     id: 39,
@@ -358,7 +358,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 7.6,
     year: 2005,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/e/eb/Chhatrapati_movie_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/e/eb/Chhatrapati_movie_poster.jpg"
   },
   {
     id: 40,
@@ -367,7 +367,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 7.9,
     year: 2006,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/b2/Pokiri_movie_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/b2/Pokiri_movie_poster.jpg"
   },
   {
     id: 41,
@@ -376,7 +376,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.2,
     year: 2006,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/a/aa/Bommarillu_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/a/aa/Bommarillu_poster.jpg"
   },
   {
     id: 42,
@@ -385,7 +385,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.2,
     year: 2016,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/b3/Pelli_Choopulu_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/b3/Pelli_Choopulu_poster.jpg"
   },
   {
     id: 43,
@@ -394,7 +394,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 7.5,
     year: 2017,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/8/8c/Fidaa_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/8/8c/Fidaa_poster.jpg"
   },
   {
     id: 44,
@@ -403,7 +403,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.4,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/a/ad/Asuran_2019_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/a/ad/Asuran_2019_poster.jpg"
   },
   {
     id: 45,
@@ -412,7 +412,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.3,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/a/a1/Super_Deluxe_film_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/a/a1/Super_Deluxe_film_poster.jpg"
   },
   {
     id: 46,
@@ -421,7 +421,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.0,
     year: 2016,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/3/33/M.S._Dhoni_-_The_Untold_Story_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/3/33/M.S._Dhoni_-_The_Untold_Story_poster.jpg"
   },
   {
     id: 47,
@@ -430,7 +430,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.2,
     year: 2013,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/4/42/Bhaag_Milkha_Bhaag_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/4/42/Bhaag_Milkha_Bhaag_poster.jpg"
   },
   {
     id: 48,
@@ -439,7 +439,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.3,
     year: 1995,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/e/e1/Baasha_1995_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/e/e1/Baasha_1995_poster.jpg"
   },
   {
     id: 49,
@@ -448,7 +448,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.1,
     year: 1992,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/d/d7/Roja_film_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/d/d7/Roja_film_poster.jpg"
   },
   {
     id: 50,
@@ -457,7 +457,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.1,
     year: 1995,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/2/28/Bombay_1995_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/2/28/Bombay_1995_poster.jpg"
   },
   {
     id: 51,
@@ -466,7 +466,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 7.9,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/2/29/Super_30_The_Film.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/2/29/Super_30_The_Film.jpg"
   },
   {
     id: 52,
@@ -475,7 +475,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.0,
     year: 2015,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/d/dd/Bajrangi_Bhaijaan_Poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/d/dd/Bajrangi_Bhaijaan_Poster.jpg"
   },
   {
     id: 53,
@@ -484,7 +484,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.2,
     year: 2004,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/8/85/Swades_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/8/85/Swades_poster.jpg"
   },
   {
     id: 54,
@@ -493,7 +493,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.0,
     year: 2012,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/be/Thuppakki_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/be/Thuppakki_poster.jpg"
   },
   {
     id: 55,
@@ -502,7 +502,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.0,
     year: 2020,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/1/1c/Ayyappanum_Koshiyum_Poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/1/1c/Ayyappanum_Koshiyum_Poster.jpg"
   },
   {
     id: 56,
@@ -511,7 +511,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 7.5,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/e/e0/Lucifer_film_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/e/e0/Lucifer_film_poster.jpg"
   },
   {
     id: 57,
@@ -520,7 +520,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.0,
     year: 2024,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/c/c5/Premalu_film_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/c/c5/Premalu_film_poster.jpg"
   },
   {
     id: 58,
@@ -529,7 +529,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.6,
     year: 2024,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/9/99/Manjummel_Boys_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/9/99/Manjummel_Boys_poster.jpg"
   },
   {
     id: 59,
@@ -538,7 +538,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.3,
     year: 2024,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/d/d1/Aavesham.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/d/d1/Aavesham.jpg"
   },
   {
     id: 60,
@@ -547,7 +547,7 @@ const DEFAULT_MOVIES = [
     language: "Kannada",
     rating: 8.3,
     year: 2016,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/1/1f/Kirik_Part_Poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/1/1f/Kirik_Part_Poster.jpg"
   },
   {
     id: 61,
@@ -556,7 +556,7 @@ const DEFAULT_MOVIES = [
     language: "Kannada",
     rating: 8.4,
     year: 2014,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/1/16/Ulidavaru_Kandanthe_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/1/16/Ulidavaru_Kandanthe_poster.jpg"
   },
   {
     id: 62,
@@ -565,7 +565,7 @@ const DEFAULT_MOVIES = [
     language: "Kannada",
     rating: 8.0,
     year: 2017,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/c/c6/Mufti_%28film%29.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/c/c6/Mufti_%28film%29.jpg"
   },
   {
     id: 63,
@@ -574,7 +574,7 @@ const DEFAULT_MOVIES = [
     language: "Kannada",
     rating: 8.8,
     year: 2022,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/1/19/777_Charlie_official_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/1/19/777_Charlie_official_poster.jpg"
   },
   {
     id: 64,
@@ -583,7 +583,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 7.4,
     year: 2016,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/4/44/Ekkadiki_Pothavu_Chinnavada.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/4/44/Ekkadiki_Pothavu_Chinnavada.jpg"
   },
   {
     id: 65,
@@ -592,7 +592,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.3,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/6/61/Agent_Sai_Srinivasa_Athreya_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/6/61/Agent_Sai_Srinivasa_Athreya_poster.jpg"
   },
   {
     id: 66,
@@ -601,7 +601,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.0,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/6/68/Brochevarevarura_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/6/68/Brochevarevarura_poster.jpg"
   },
   {
     id: 67,
@@ -610,7 +610,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.1,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/9/95/Mathu_Vadalara.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/9/95/Mathu_Vadalara.jpg"
   },
   {
     id: 68,
@@ -619,7 +619,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.1,
     year: 2016,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/0/0d/Kshanam_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/0/0d/Kshanam_poster.jpg"
   },
   {
     id: 69,
@@ -628,7 +628,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 7.8,
     year: 2018,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/ba/Goodachari.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/ba/Goodachari.jpg"
   },
   {
     id: 70,
@@ -637,7 +637,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.9,
     year: 2018,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/d/d3/C-o_Kancharapalem.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/d/d3/C-o_Kancharapalem.jpg"
   },
   {
     id: 71,
@@ -646,7 +646,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 7.9,
     year: 2022,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/7/7e/Karthikeya_2_Poster.jpeg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/7/7e/Karthikeya_2_Poster.jpeg"
   },
   {
     id: 72,
@@ -655,7 +655,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 6.5,
     year: 2023,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/6/6f/Salaar_ceasefire.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/6/6f/Salaar_ceasefire.jpg"
   },
   {
     id: 73,
@@ -664,7 +664,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 7.8,
     year: 2024,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/4/4c/Kalki_2898_AD.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/4/4c/Kalki_2898_AD.jpg"
   },
   {
     id: 74,
@@ -673,7 +673,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 6.6,
     year: 2023,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/9/90/Animal_%282023_film%29_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/9/90/Animal_%282023_film%29_poster.jpg"
   },
   {
     id: 75,
@@ -682,7 +682,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 7.0,
     year: 2007,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/b3/Billa_2007_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/b3/Billa_2007_poster.jpg"
   },
   {
     id: 76,
@@ -691,7 +691,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.5,
     year: 1987,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/d/d0/Nayakan_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/d/d0/Nayakan_poster.jpg"
   },
   {
     id: 77,
@@ -700,7 +700,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.7,
     year: 2018,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/3/35/Pariyerum_Perumal.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/3/35/Pariyerum_Perumal.jpg"
   },
   {
     id: 78,
@@ -709,7 +709,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.8,
     year: 2021,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/a/ad/Jai_Bhim_film_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/a/ad/Jai_Bhim_film_poster.jpg"
   },
   {
     id: 79,
@@ -718,7 +718,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.4,
     year: 2018,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/2/2c/Vada_Chennai.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/2/2c/Vada_Chennai.jpg"
   },
   {
     id: 80,
@@ -727,7 +727,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.3,
     year: 2018,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/7/77/Ratsasan_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/7/77/Ratsasan_poster.jpg"
   },
   {
     id: 81,
@@ -736,7 +736,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.1,
     year: 2022,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/ba/Gargi_Film_Poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/ba/Gargi_Film_Poster.jpg"
   },
   {
     id: 82,
@@ -745,7 +745,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.0,
     year: 2021,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/6/62/Karnan_2021_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/6/62/Karnan_2021_poster.jpg"
   },
   {
     id: 83,
@@ -754,7 +754,7 @@ const DEFAULT_MOVIES = [
     language: "Tamil",
     rating: 8.4,
     year: 1997,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/6/6a/Iruvar_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/6/6a/Iruvar_poster.jpg"
   },
   {
     id: 84,
@@ -763,7 +763,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.2,
     year: 2012,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/6/6a/Gangs_of_Wasseypur_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/6/6a/Gangs_of_Wasseypur_poster.jpg"
   },
   {
     id: 85,
@@ -772,7 +772,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.4,
     year: 2004,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/5/58/Black_Friday_%282007%29.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/5/58/Black_Friday_%282007%29.jpg"
   },
   {
     id: 86,
@@ -781,7 +781,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.3,
     year: 2007,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/b4/Taare_Zameen_Par_Like_Stars_on_Earth_poster.png"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/b4/Taare_Zameen_Par_Like_Stars_on_Earth_poster.png"
   },
   {
     id: 87,
@@ -790,7 +790,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.1,
     year: 2003,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/8/84/Munna_Bhai_M.B.B.S._poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/8/84/Munna_Bhai_M.B.B.S._poster.jpg"
   },
   {
     id: 88,
@@ -799,7 +799,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 7.8,
     year: 2013,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/8/81/The_Lunchbox_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/8/81/The_Lunchbox_poster.jpg"
   },
   {
     id: 89,
@@ -808,7 +808,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.2,
     year: 2012,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/9/93/Paan_Singh_Tomar_Poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/9/93/Paan_Singh_Tomar_Poster.jpg"
   },
   {
     id: 90,
@@ -817,7 +817,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.1,
     year: 2010,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/7/71/Udaan_Movie_Poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/7/71/Udaan_Movie_Poster.jpg"
   },
   {
     id: 91,
@@ -826,7 +826,7 @@ const DEFAULT_MOVIES = [
     language: "Hindi",
     rating: 8.1,
     year: 1971,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/c/c9/Anand_film.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/c/c9/Anand_film.jpg"
   },
   {
     id: 92,
@@ -835,7 +835,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.3,
     year: 2016,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/3/33/Maheshinte_Prathikaaram.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/3/33/Maheshinte_Prathikaaram.jpg"
   },
   {
     id: 93,
@@ -844,7 +844,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.1,
     year: 2017,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/4/4f/Thondimuthalum_Driksakshiyum.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/4/4f/Thondimuthalum_Driksakshiyum.jpg"
   },
   {
     id: 94,
@@ -853,7 +853,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.5,
     year: 2024,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/b5/Adujivitam.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/b5/Adujivitam.jpg"
   },
   {
     id: 95,
@@ -862,7 +862,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.3,
     year: 2014,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/5/5c/%27Bangalore_Days%27_2014_Malayalam_Film_-_Poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/5/5c/%27Bangalore_Days%27_2014_Malayalam_Film_-_Poster.jpg"
   },
   {
     id: 96,
@@ -871,7 +871,7 @@ const DEFAULT_MOVIES = [
     language: "Malayalam",
     rating: 8.2,
     year: 2012,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/6/64/Ustad_Hotel_%282012%29_-_Poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/6/64/Ustad_Hotel_%282012%29_-_Poster.jpg"
   },
   {
     id: 97,
@@ -880,7 +880,7 @@ const DEFAULT_MOVIES = [
     language: "Kannada",
     rating: 8.1,
     year: 2020,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/5/5a/Dia_%282020_Kannada_film%29_film_poster.jpeg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/5/5a/Dia_%282020_Kannada_film%29_film_poster.jpeg"
   },
   {
     id: 98,
@@ -889,7 +889,7 @@ const DEFAULT_MOVIES = [
     language: "Kannada",
     rating: 8.2,
     year: 2015,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/4/47/2015_Kannada_film_Rangitaranga_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/4/47/2015_Kannada_film_Rangitaranga_poster.jpg"
   },
   {
     id: 99,
@@ -898,7 +898,7 @@ const DEFAULT_MOVIES = [
     language: "Kannada",
     rating: 8.3,
     year: 2013,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/e/eb/Lucia_film.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/e/eb/Lucia_film.jpg"
   },
   {
     id: 100,
@@ -907,7 +907,7 @@ const DEFAULT_MOVIES = [
     language: "Kannada",
     rating: 7.9,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/2/2a/Kavaludaari_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/2/2a/Kavaludaari_poster.jpg"
   },
   {
     id: 101,
@@ -916,7 +916,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.1,
     year: 2010,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/3/3c/Vedam-poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/3/3c/Vedam-poster.jpg"
   },
   {
     id: 102,
@@ -925,7 +925,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.2,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/1/18/Mallesham_Poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/1/18/Mallesham_Poster.jpg"
   },
   {
     id: 103,
@@ -934,7 +934,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 7.9,
     year: 2014,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/7/76/Oohalu_Gusagusalade_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/7/76/Oohalu_Gusagusalade_poster.jpg"
   },
   {
     id: 104,
@@ -943,7 +943,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 8.0,
     year: 2014,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/b/b3/1_Nenokkadine_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/b/b3/1_Nenokkadine_poster.jpg"
   },
   {
     id: 105,
@@ -952,7 +952,7 @@ const DEFAULT_MOVIES = [
     language: "Telugu",
     rating: 7.9,
     year: 2019,
-    poster: "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/en/6/63/Evaru_poster.jpg"
+    poster: "https://upload.wikimedia.org/wikipedia/en/6/63/Evaru_poster.jpg"
   }
 ];
 
